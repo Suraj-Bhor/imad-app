@@ -186,7 +186,7 @@ app.get('/articles/:articleName',function(req,res)
        }
        else
        {
-           if(res.rows.length === 0)
+           if(res.rows.length() === 0)
            {
                res.status(400).send("Article not found");
            }else
